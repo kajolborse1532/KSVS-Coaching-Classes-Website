@@ -1,0 +1,413 @@
+.home {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 0;
+  margin-top: 0;
+}
+
+.home h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 1.2em;
+}
+
+.inner-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 10px 0;
+  min-height: 120px;
+}
+
+.overlay-theme-colored-7 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.section-content {
+  text-align: center;
+}
+
+/* Basic styling for the section */
+.section {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Light gray background color */
+}
+
+/* Container to keep the content centered and responsive */
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling for the row to ensure proper spacing */
+.row {
+  margin: 0 -15px;
+}
+
+/* Styling for the columns */
+.col-lg-10 {
+  padding: 0 15px;
+}
+
+/* Section title styling */
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f08411;
+}
+
+/* Centering the section title and adding margin */
+.section-title.text-center {
+  margin-bottom: 40px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Centering the paragraphs */
+.text-center {
+  text-align: center;
+}
+
+/* Italic text styling */
+i {
+  font-style: italic;
+  color: #666;
+}
+
+.text-theme-colored2 {
+  color: #4e3708;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.breadcrumb li {
+  margin-right: 10px;
+}
+
+.breadcrumb a {
+  color: rgb(207, 169, 128);
+  text-decoration: none;
+}
+
+.breadcrumb .active h5 {
+  color: #4e2c06;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Customize the color as needed */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7; /* Customize the opacity as needed */
+}
+
+/* General section styling */
+.content-section {
+  padding: 10px 0;
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.content-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #f5ab21;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics-block {
+  background-color: #e0e0e0; /* Light grey background */
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-block strong {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+
+.statistics-block b {
+  font-size: 24px;
+  color: #d27604;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .statistics-block {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .statistics-block {
+    padding: 40px;
+  }
+}
+
+/* Course card styling */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-text span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn btn-primary {
+  color: red;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.btn {
+  background-color: #df7f09;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #249935;
+}
+
+@media (min-width: 576px) {
+  .card {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 32px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+}
+
+.animated-div {
+  animation: slideIn 1s ease-out;
+}
+
+.content {
+  padding: 15px;
+}
+
+.founder-message {
+  width: 90%;
+  background-color: #d27604;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  margin: auto; /* Center the content horizontally */
+}
+
+.founder-message:hover {
+  width: 90%;
+  background-color: rgb(236, 146, 73);
+}
+
+.testimonials {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #d27604;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial-item {
+  width: calc(33.33% - 20px); /* Adjust width as needed */
+  max-width: 300px;
+  margin: 10px; /* Add some margin around each testimonial */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Ensure text is aligned left within each testimonial item */
+}
+
+.testimonial-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial-item p {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.testimonial-item p:last-child {
+  font-weight: bold;
+}
+
+.awards-section {
+  padding: 60px 0;
+  background-color: #fff; /* White background color */
+  text-align: center;
+}
+
+.awards-section h2 {
+  font-size: 36px;
+  color: #f08411;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.awards-section .award-img {
+  width: 100px; /* Set a fixed width for award images */
+  height: auto;
+  margin: 20px; /* Add margin for spacing */
+}
+
+.awards-section .row {
+  justify-content: center; /* Center the images horizontally */
+}
+
+.virtual-store-section {
+  padding: 20px 0;
+}
+
+.virtual-store-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.virtual-store-section form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.virtual-store-section form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.virtual-store-section form input,
+.virtual-store-section form textarea {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.virtual-store-section form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.virtual-store-section form button:hover {
+  background-color: #d35400;
+}
+
+/* Keyframes for the slideIn animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

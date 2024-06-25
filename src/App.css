@@ -1,0 +1,275 @@
+/* General container */
+.container {
+  display: flex;
+  margin-top: 80px; 
+  padding: 0;
+  margin: 0;
+ background-position: 1%;
+ 
+}
+
+/* CSS for Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c06607;
+  height: 80px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.nav-toggle {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.nav-toggle.active {
+  color: #eca026; /* Yellow shade */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  max-width: 70px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin-right: 20px;
+}
+
+.header-nav li a {
+  color: rgb(171, 76, 8);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.header-nav li a:hover {
+  color: #a15509;
+}
+
+/* Custom styles for profile icon and login button */
+.custom-color {
+  color: #eca026 !important;
+}
+
+.custom-button {
+  color: #fff !important;
+  background-color: #eca026 !important;
+  border-color: #eca026 !important;
+}
+
+.custom-button:hover {
+  background-color: #d19b24 !important; /* Slightly darker shade for hover */
+  border-color: #d19b24 !important;
+}
+
+/* CSS for Sidebar */
+.overlay {
+  position: fixed;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(169, 90, 17, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.overlay.open {
+  width: 20%;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: white;
+  z-index: 1000;
+}
+
+.overlay .overlay-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+.overlay .overlay-content li {
+  margin-bottom: 10px;
+}
+
+.overlay .overlay-content a {
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #721212;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .overlay-content a:hover,
+.overlay .overlay-content a:focus {
+  color: #f1f1f1;
+}
+
+/* Adjust main content when sidebar is open */
+.header.sidebar-open + .container .content {
+  margin-left: 20%;
+  margin-right: 0;
+  padding: 0;
+}
+
+/* Adjust main content when sidebar is closed */
+.container.sidebar-closed .content {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0; /* Reset margin to 0 */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2px;
+  margin-left: 20%; /* Adjust margin to accommodate the sidebar */
+  transition: margin-left 0.3s ease;
+}
+
+.content.sidebar-closed {
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 0;
+}
+
+/* Sidebar Button */
+.open-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  top: 90px; /* Align with the sidebar toggle button */
+  left: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 20px;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+.open-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #634715; /* Dark Gray */
+  color: #ECF0F1; /* Light Gray */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.footer .about,
+.footer .quick-links,
+.footer .get-in-touch {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  color: #ECF0F1;
+}
+
+.footer h2 {
+  margin-bottom: 10px;
+}
+
+.footer p,
+.footer address,
+.footer ul {
+  margin: 0;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: #010507;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.footer a:hover {
+  color: #E67E22; /* Orange */
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #ec8212; /* Sky Blue */
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #965e05; /* Deep Blue */
+}
+
+.btn-secondary {
+  background-color: #E67E22; /* Orange */
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #D35400; /* Darker Orange */
+}

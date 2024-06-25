@@ -1,0 +1,362 @@
+/* Reset some basic elements */
+body, html, div, p, img, input, button, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling for the entire page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* About Section */
+.about-container {
+  font-family: Arial, sans-serif;
+  inline-size: none;
+}
+
+.inner-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  min-height: 200px;
+}
+
+.overlay-theme-colored-7 {
+  background-color: rgba(255, 165, 0, 0.7);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.section-content {
+  text-align: center;
+}
+
+.text-theme-colored2 {
+  margin: 20px 0px 10px;
+  color: #FF4500;
+  transition: color 0.3s ease;
+}
+
+.text-theme-colored2:hover {
+  color: #FFA07A;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+/* Header Section */
+#header {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  color: white;
+  overflow: hidden;
+}
+
+.header-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.header-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: slide-up 1s ease-out;
+}
+
+.header-text {
+  font-size: 2.5em;
+  margin: 0;
+  animation: tracking-in-expand-fwd-bottom 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 1.2em;
+  animation: tracking-in-expand-fwd-top 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand-fwd-bottom {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px) translateY(500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand-fwd-top {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px) translateY(-500px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Gallery Section */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-container {
+  position: relative;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+#suggestions-container {
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  z-index: 10;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+#suggestions-list {
+  list-style-type: none;
+}
+
+#suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  animation: slide-in 0.3s ease-out;
+}
+
+#suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Hide the search button */
+#search-button {
+  display: none;
+}
+
+/* Filter button styling */
+#filter {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#filter button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#filter button:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+
+/* Product container styling */
+#products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  background: linear-gradient(135deg, #FFA500, #FF6347);
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fade-in 0.5s ease-in-out, slide-up 0.5s ease-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image container styling */
+.image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  animation: fade-in 1s ease-in-out;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Card paragraph styling */
+.card p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Form container styling */
+#form-container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#form-container h2 {
+  margin-bottom: 20px;
+  color: #FF8C00;
+}
+
+#form-container input {
+  width: calc(50% - 20px);
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
+}
+
+#form-container input:focus {
+  box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+#form-container button {
+  background-color: #FF8C00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+#form-container button:hover {
+  background-color: #FF4500;
+  transform: scale(1.05);
+}
+/* Add Student button */
+.add-student-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f3930d;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-student-btn:hover {
+  background-color: #eb862e;
+}
+

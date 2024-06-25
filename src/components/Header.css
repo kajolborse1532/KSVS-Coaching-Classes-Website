@@ -1,0 +1,135 @@
+/* CSS for Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgb(2, 2, 58);
+    height: 80px;
+    
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.nav-toggle {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.logo {
+    max-width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li {
+    margin-right: 20px;
+}
+
+.header-nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.header-nav li a:hover {
+    color: #ddd;
+}
+
+/* CSS for Sidebar */
+.overlay {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 999;
+}
+
+.overlay.open {
+    width: 20%;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    z-index: 1000;
+}
+
+.overlay .overlay-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.overlay .overlay-content li {
+    margin-bottom: 10px;
+}
+
+.overlay .overlay-content a {
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .overlay-content a:hover,
+.overlay .overlay-content a:focus {
+    color: #f1f1f1;
+}
+
+/* Adjust main content when sidebar is open */
+.header.sidebar-open + .container .content {
+    margin-left: 20%;
+}
+
+/* Adjust main content when sidebar is closed */
+.container.sidebar-closed .content {
+    margin-left: 0; /* Reset margin to 0 */
+}
+
