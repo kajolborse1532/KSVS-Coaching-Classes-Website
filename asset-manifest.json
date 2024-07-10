@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/KSVS-Coaching-Classes-Website/static/css/main.e4514f94.css",
+    "main.js": "/KSVS-Coaching-Classes-Website/static/js/main.85da1a88.js",
+    "static/media/founder-image.png": "/KSVS-Coaching-Classes-Website/static/media/founder-image.ea0d7cb0c899768f3174.png",
+    "static/media/college_stress.png": "/KSVS-Coaching-Classes-Website/static/media/college_stress.46a3539841253342172e.png",
+    "static/media/mission11.png": "/KSVS-Coaching-Classes-Website/static/media/mission11.ae21c0afce0c32997b32.png",
+    "static/media/prime-focus.png": "/KSVS-Coaching-Classes-Website/static/media/prime-focus.68843a9d1d43b34cdabb.png",
+    "static/media/vision1.png": "/KSVS-Coaching-Classes-Website/static/media/vision1.75f0d0761e1c05a6fa2d.png",
+    "static/media/boy2.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy2.901648855061789bd7ab.JPG",
+    "static/media/boy4.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy4.aa55d68597a5a898ffad.JPG",
+    "static/media/woman2.jpg": "/KSVS-Coaching-Classes-Website/static/media/woman2.f43619dd85e5897b6398.jpg",
+    "static/media/boy3.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy3.a53557ad6f3c1f8b22d5.JPG",
+    "static/media/woman3.JPG": "/KSVS-Coaching-Classes-Website/static/media/woman3.660e5a0d945b0d8a22cd.JPG",
+    "static/media/heading.jpg": "/KSVS-Coaching-Classes-Website/static/media/heading.3743417c721512489307.jpg",
+    "static/media/man-img1.jpg": "/KSVS-Coaching-Classes-Website/static/media/man-img1.6b1ddfe939beb44f2400.jpg",
+    "static/media/woman1.JPG": "/KSVS-Coaching-Classes-Website/static/media/woman1.c57f7b5e93807a9a42cd.JPG",
+    "static/media/boy6.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy6.4646627f4a91439d926d.JPG",
+    "static/media/time_management.jpg": "/KSVS-Coaching-Classes-Website/static/media/time_management.111ba68ec0b9c66a1b12.jpg",
+    "static/media/positive-thinking.jpg": "/KSVS-Coaching-Classes-Website/static/media/positive-thinking.96286cccdb013f91b8c2.jpg",
+    "static/media/boy1.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy1.2ef432fc51efe5b938ea.JPG",
+    "static/media/boy5.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy5.c93df52dc7e83935cf95.JPG",
+    "static/media/KSVS.jpg": "/KSVS-Coaching-Classes-Website/static/media/KSVS.30bfb6516eb82d96991e.jpg",
+    "static/media/study_tips.jpg": "/KSVS-Coaching-Classes-Website/static/media/study_tips.72a6a6e156f470ae6572.jpg",
+    "static/media/boy7.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy7.b4100c22cb7d22ea42e9.JPG",
+    "index.html": "/KSVS-Coaching-Classes-Website/index.html",
+    "main.e4514f94.css.map": "/KSVS-Coaching-Classes-Website/static/css/main.e4514f94.css.map",
+    "main.85da1a88.js.map": "/KSVS-Coaching-Classes-Website/static/js/main.85da1a88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4514f94.css",
+    "static/js/main.85da1a88.js"
+  ]
+}
