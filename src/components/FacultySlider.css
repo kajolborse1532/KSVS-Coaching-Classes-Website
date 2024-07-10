@@ -1,0 +1,35 @@
+/* src/components/FacultySlider.css */
+.faculty-slider {
+    padding: 40px 0;
+  }
+  
+  .faculty-slide {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .faculty-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .faculty-slide h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .faculty-slide p {
+    color: #555;
+  }
+  
+  .faculty-slide:hover .faculty-image {
+    transform: scale(1.05);
+  }
+  
+  .slick-dots li button:before {
+    color: #eca026;
+  }
+  

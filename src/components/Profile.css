@@ -1,0 +1,29 @@
+/* Profile.css */
+.profile-section {
+    background-color: #f58220; /* Orange background */
+    padding: 40px 0; /* Adjust padding as needed */
+  }
+  
+  .profile-card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #dddddd; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+  }
+  
+  .profile-progress {
+    background-color: #ff9f00; /* Orange progress bar */
+    height: 20px; /* Height of the progress bar */
+    border-radius: 10px; /* Rounded corners */
+    animation: progressAnimation 2s ease-in-out forwards; /* Animation */
+  }
+  
+  @keyframes progressAnimation {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  

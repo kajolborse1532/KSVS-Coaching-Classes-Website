@@ -1,0 +1,107 @@
+/* Course.css */
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Section Styles */
+.inner-header {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 0 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.inner-header h2 {
+  color: #fff;
+  animation: slideUp 1s ease-in-out;
+}
+
+.inner-header .breadcrumb {
+  margin-top: 10px;
+  animation: slideUp 1s ease-in-out 0.5s; /* Adding delay for breadcrumb */
+}
+
+/* Content Section Styles */
+.content-section {
+  padding: 60px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.content-section h2.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: slideUp 1s ease-in-out;
+}
+
+.content-section p {
+  text-align: center;
+  color: #777;
+  animation: fadeIn 1s ease-in-out 0.5s; /* Adding delay for paragraph */
+}
+
+.content-section h1 {
+  text-align: center;
+  color: #777;
+  animation: fadeIn 1s ease-in-out 0.5s; /* Adding delay for h1 */
+  padding-bottom: 100px;
+}
+
+/* Course Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  background-color: #fff5e6; /* Light orange background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffecd1; /* Slightly darker light orange on hover */
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title,h5{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #c12525;
+}
+
+.card-text {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.course-card .btn-orange {
+  background-color: #ff9f00; /* Orange button background */
+  border-color: #ff9f00; /* Orange button border */
+}
+
+.course-card .btn-orange:hover {
+  background-color: #f58220; /* Darker orange on hover */
+  border-color: #f58220;
+}

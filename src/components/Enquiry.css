@@ -1,0 +1,130 @@
+/* contact.css */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: scale(1);
+    background-color: #de8e33;
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: #5f3607;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #724d08;
+  }
+}
+
+.contact-form-background {
+  background-image: url('https://livingtolead.com/wp-content/uploads/2018/12/group-coaching-background.jpg'); /* Replace with your image URL */
+  background-size:cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+  color: #2e1b04;
+}
+
+.msg {
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+  min-height: 1;
+}
+.h1:hover{
+  color: #c57b1a;
+}
+.hover-effect {
+  font-size: 2em;
+  transition: color 0.3s, transform 0.3s;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hover-effect:hover {
+  color: #be8014d6;
+  transform: scale(1.1);
+  
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f7fc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #f9f6f6;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #eef0f4;
+  box-shadow: #d87914;
+  animation: fadeIn 3s ease-in-out;
+}
+
+input[type="submit"] {
+  background-color: #c57b1a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  animation: fadeIn 3.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+  animation: buttonHover 0.5s ease-in-out infinite;
+  text-transform: uppercase;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+form > *:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #abb1bf;
+}
+
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+  }
+}
