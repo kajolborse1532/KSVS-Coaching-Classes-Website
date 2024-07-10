@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KSVS-Coaching-Classes-Website/static/css/main.e4514f94.css",
-    "main.js": "/KSVS-Coaching-Classes-Website/static/js/main.85da1a88.js",
+    "main.css": "/KSVS-Coaching-Classes-Website/static/css/main.34c97794.css",
+    "main.js": "/KSVS-Coaching-Classes-Website/static/js/main.18ef2b60.js",
     "static/media/founder-image.png": "/KSVS-Coaching-Classes-Website/static/media/founder-image.ea0d7cb0c899768f3174.png",
     "static/media/college_stress.png": "/KSVS-Coaching-Classes-Website/static/media/college_stress.46a3539841253342172e.png",
     "static/media/mission11.png": "/KSVS-Coaching-Classes-Website/static/media/mission11.ae21c0afce0c32997b32.png",
@@ -24,11 +24,11 @@
     "static/media/study_tips.jpg": "/KSVS-Coaching-Classes-Website/static/media/study_tips.72a6a6e156f470ae6572.jpg",
     "static/media/boy7.JPG": "/KSVS-Coaching-Classes-Website/static/media/boy7.b4100c22cb7d22ea42e9.JPG",
     "index.html": "/KSVS-Coaching-Classes-Website/index.html",
-    "main.e4514f94.css.map": "/KSVS-Coaching-Classes-Website/static/css/main.e4514f94.css.map",
-    "main.85da1a88.js.map": "/KSVS-Coaching-Classes-Website/static/js/main.85da1a88.js.map"
+    "main.34c97794.css.map": "/KSVS-Coaching-Classes-Website/static/css/main.34c97794.css.map",
+    "main.18ef2b60.js.map": "/KSVS-Coaching-Classes-Website/static/js/main.18ef2b60.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4514f94.css",
-    "static/js/main.85da1a88.js"
+    "static/css/main.34c97794.css",
+    "static/js/main.18ef2b60.js"
   ]
 }
